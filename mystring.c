@@ -37,6 +37,12 @@ void my_strupper(char * str){
 }
 
 char * my_strchr(const char * str, char ch){
-    
+    const char *pc = str;
+    while(*pc != '\0'){
+        if(*pc == ch){
+            return pc;
+        }
+        pc++;
+    }
     return NULL;
 }
