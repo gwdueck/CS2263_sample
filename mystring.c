@@ -29,7 +29,11 @@ int my_countchar(const char * str, char ch){
 }
 
 void my_strupper(char * str){
-    
+    char *pc = str;
+    while(*pc != '\0'){
+        *pc = toupper(*pc);
+        pc++;
+    }
 }
 
 char * my_strchr(const char * str, char ch){
