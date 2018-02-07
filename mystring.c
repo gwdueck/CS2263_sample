@@ -10,13 +10,22 @@
 #include <stdlib.h>
 
 int my_strlen(const char * str){
-   
-    return 0;
+
+    int cnt = 0;
+    while(*(str+cnt++));
+    return cnt-1;
 }
 
 int my_countchar(const char * str, char ch){
-    
-    return 0;
+    const char *pc = str;
+    int cnt = 0;
+    while(*pc != '\0'){
+        if(*pc == ch){
+            cnt++;
+        }
+        pc++;
+    }
+    return cnt;
 }
 
 void my_strupper(char * str){
