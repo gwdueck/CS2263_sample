@@ -12,7 +12,7 @@
 // test the functions in mystring
 
 int main(int argv, char **argc){
-    char str[] = "this is the test string for this program";
+    char str[] = "this is the test string for this program!";
     printf("The string = \"%s\"\n", str);
     printf("The string has %d charcters\n", my_strlen(str));
     int ch = 'i';
